@@ -488,7 +488,7 @@ export default function Home() {
               <div className="flex justify-center m-3 h-10">
                 <Link
                   className="w-7"
-                  href="https://github.com/RodsmonsterPC/MisPelis"
+                  href="https://github.com/RodsmonsterPC/Blife"
                 >
                   <Image
                     className="hover:w-8 h-8"
