@@ -248,7 +248,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 mx-auto ">
+        <div className="grid grid-cols-3 gap-4 mx-auto ">
           <div className="w-card h-card bg-white rounded-md ">
             <div>
               <Link href={"https://foodie-six-rho.vercel.app/"}>
@@ -260,7 +260,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <p className="m-2">Foodie - Ecommerce</p>
+            <p className="m-2 font-bold">Foodie - Ecommerce</p>
             <div>
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4 border-t-4">
@@ -315,7 +315,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <p className="m-2">Devto</p>
+            <p className="m-2 font-bold">Devto</p>
             <div>
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4  border-t-4">
@@ -364,7 +364,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <p className="m-2">Rick and Morty API</p>
+            <p className="m-2 font-bold">Rick and Morty API</p>
             <div>
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4 border-t-4">
@@ -419,7 +419,7 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <p className="m-2">Mis Pelis</p>
+            <p className="m-2 font-bold">Mis Pelis</p>
             <div>
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4 border-t-4">
@@ -451,6 +451,55 @@ export default function Home() {
                 <Link
                   className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 hover:bg-indigo-900 h-8 pt-1"
                   href={"https://mis-pelis.vercel.app/"}
+                >
+                  Watch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="w-card h-card bg-white rounded-md">
+            <div>
+              <Link href={"https://blife-gray.vercel.app/"}>
+                <Image
+                  className="rounded-t-lg"
+                  src={"/Blife.JPG"}
+                  width={400}
+                  height={400}
+                />
+              </Link>
+            </div>
+            <p className="m-2 font-bold">Blife</p>
+            <div>
+              <p className="text-center mt-3">Languages</p>
+              <div className="flex justify-center mt-4 border-b-4 border-t-4 pb-1.5">
+                <Image
+                  className="m-4 rounded-full"
+                  src={"/next.svg"}
+                  width={60}
+                  height={60}
+                />
+                <Image
+                  className="m-4 rounded-full"
+                  src={"/Tailwinds.png"}
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <div className="flex justify-center m-3 h-10">
+                <Link
+                  className="w-7"
+                  href="https://github.com/RodsmonsterPC/MisPelis"
+                >
+                  <Image
+                    className="hover:w-8 h-8"
+                    src={"/github.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 hover:bg-indigo-900 h-8 pt-1"
+                  href={"https://blife-gray.vercel.app/"}
                 >
                   Watch
                 </Link>
