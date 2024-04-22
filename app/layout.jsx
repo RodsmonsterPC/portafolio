@@ -1,5 +1,5 @@
 import { Roboto, Inter } from "@next/font/google";
-
+import { DataProvider } from "./context/context";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
@@ -17,18 +17,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className}`}>
-        <Navbar
-          links={[
-            { name: "About me", id: "About" },
-            { name: "Languages", id: "Languages" },
-            { name: "Soft Skills", id: "Soft" },
-            { name: "Projects", id: "Projects" },
-          ]}
-        />
-        {children}
-      </body>
-    </html>
+    <DataProvider>
+      <html lang="en">
+        <body className={`${roboto.className} `}>
+          <Navbar
+            links={[
+              { name: "About me", id: "About" },
+              { name: "Languages", id: "Languages" },
+              { name: "Soft Skills", id: "Soft" },
+              { name: "Projects", id: "Projects" },
+            ]}
+          />
+          {children}
+        </body>
+      </html>
+    </DataProvider>
   );
 }

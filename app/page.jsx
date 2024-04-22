@@ -1,12 +1,29 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useDataContext } from "./context/context";
 export default function Home() {
+  const mode = useDataContext();
+  const { dark } = mode;
   return (
-    <main id="About" className="flex flex-col mt-16">
-      <section className="flex justify-between">
+    <main
+      id="About"
+      className={`flex flex-col mt-10 ${
+        !dark
+          ? "bg-gradient-to-r from-cyan-50 to-cyan-300"
+          : "bg-gradient-to-r from-zinc-500 to-zinc-900"
+      }`}
+    >
+      <section className="flex justify-between mt-6">
         <div className="flex flex-col w-title ml-24 mb-10 mt-10">
-          <h1 className="text-5xl text-center">¡Hi my name is Rodolfo!</h1>
-          <h2 className="text-4xl text-fuchsia-700 text-center">
+          <h1 className={`text-5xl text-center ${dark ? "text-white" : ""}`}>
+            ¡Hi my name is Rodolfo!
+          </h1>
+          <h2
+            className={`text-4xl  text-center ${
+              dark ? "text-neutral-400" : "text-fuchsia-700"
+            }`}
+          >
             Frontend Developer
           </h2>
           <div className="mt-2 flex justify-center ">
@@ -31,6 +48,22 @@ export default function Home() {
               />
             </Link>
           </div>
+          <div
+            className={`flex justify-center mt-4 
+            `}
+          >
+            <Link href={"/resume.pdf"}>
+              <p
+                className={`rounded-full w-28 h-9 pt-1.5 text-center text-white ${
+                  dark
+                    ? "bg-gradient-to-r from-indigo-500 to-blue-600"
+                    : "bg-gradient-to-r from-red-500 to-orange-500 "
+                }`}
+              >
+                CV - Resume
+              </p>
+            </Link>
+          </div>
         </div>
         <div className="mr-24 ">
           <Image
@@ -48,7 +81,11 @@ export default function Home() {
           </h2>
         </div>
         <div className="row-span-2">
-          <p className="text-md text-center font-sans">
+          <p
+            className={`text-md text-center font-sans ${
+              dark ? "text-white" : ""
+            }`}
+          >
             Hello, my name is Rodolfo Pérez Cerecedo, 25 years old, from
             Tampico, Tamaulipas, Mex. A Junior programmer with experience on
             javascript, nodejs, git, vite.js, next.js and react. Updating to new
@@ -73,7 +110,11 @@ export default function Home() {
             Languages
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-4 ml-96 w-description">
+        <div
+          className={`grid grid-cols-3 gap-4 ml-96 w-description ${
+            dark ? "text-white" : ""
+          }`}
+        >
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
               className="hover:w-40"
@@ -248,8 +289,16 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 mx-auto ">
-          <div className="w-card h-card bg-white rounded-md ">
+        <div
+          className={`grid grid-cols-3 gap-4 mx-auto ${
+            dark ? "text-purple-800" : ""
+          }`}
+        >
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
             <div>
               <Link href={"https://foodie-six-rho.vercel.app/"}>
                 <Image
@@ -304,7 +353,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-card h-card bg-white rounded-md">
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
             <div>
               <Link href={"https://devto-challenge-iota.vercel.app/"}>
                 <Image
@@ -353,7 +406,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-card h-card bg-white rounded-md">
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
             <div>
               <Link href={"https://rickandmorty-ashen.vercel.app/"}>
                 <Image
@@ -408,7 +465,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-card h-card bg-white rounded-md">
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
             <div>
               <Link href={"https://mis-pelis.vercel.app/"}>
                 <Image
@@ -457,7 +518,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-card h-card bg-white rounded-md">
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
             <div>
               <Link href={"https://blife-gray.vercel.app/"}>
                 <Image
