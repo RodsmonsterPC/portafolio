@@ -243,7 +243,9 @@ export default function Home() {
             Soft Skills
           </h2>
         </div>
-        <div className="flex justify-center">
+        <div
+          className={`flex justify-center ${dark ? "text-white" : "text-red "}`}
+        >
           <div className="m-10 ">
             <Image
               className="shadow-xl"
