@@ -52,7 +52,7 @@ export default function Home() {
             className={`flex justify-center mt-4 
             `}
           >
-            <Link href={"/resume.pdf"}>
+            <Link href={"/CV-Foto.pdf"}>
               <p
                 className={`rounded-full w-28 h-9 pt-1.5 text-center text-white ${
                   dark
@@ -115,9 +115,9 @@ export default function Home() {
             dark ? "text-white" : ""
           }`}
         >
-          <div className="w-32 h-34 border-1  flex items-center">
+          <div className="w-32 h-34 border-1  flex items-center ">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden hover:scale-125"
               src={"/React.svg.png"}
               width={40}
               height={40}
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden hover:scale-125"
               src={"/Javacript.png"}
               width={40}
               height={40}
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden hover:scale-125"
               src={"/git.png"}
               width={40}
               height={40}
@@ -147,17 +147,17 @@ export default function Home() {
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden hover:scale-125"
               src={"/Node.png"}
               width={40}
               height={40}
               alt="Nodejs"
             />
-            <p className="ml-2">Nodejs</p>
+            <p className="ml-2">Node.js</p>
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden hover:scale-125"
               src={"/Npm.png"}
               width={80}
               height={40}
@@ -167,27 +167,27 @@ export default function Home() {
           </div>
           <div className="w-44 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden rounded-md hover:scale-125"
               src={"/nextjs.png"}
               width={80}
               height={40}
               alt="Nextjs"
             />
-            <p className="ml-2">Nextjs</p>
+            <p className="ml-2">Next.js</p>
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-20"
+              className="overflow-hidden hover:scale-125"
               src={"/Vite.svg"}
               width={40}
               height={40}
               alt="Vitejs"
             />
-            <p className="ml-2">Vitejs</p>
+            <p className="ml-2">Vite.js</p>
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden hover:scale-125"
               src={"/typecript.png"}
               width={40}
               height={40}
@@ -197,7 +197,7 @@ export default function Home() {
           </div>
           <div className="w-44 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden rounded-md hover:scale-125"
               src={"/Mongoose.png"}
               width={80}
               height={40}
@@ -207,7 +207,7 @@ export default function Home() {
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden  hover:scale-125"
               src={"/Bootstrap.png"}
               width={40}
               height={40}
@@ -217,7 +217,7 @@ export default function Home() {
           </div>
           <div className="w-32 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden hover:scale-125"
               src={"/css.png"}
               width={40}
               height={40}
@@ -227,7 +227,7 @@ export default function Home() {
           </div>
           <div className="w-44 h-34 border-1  flex items-center">
             <Image
-              className="hover:w-40"
+              className="overflow-hidden rounded-md hover:scale-125"
               src={"/Tailwinds.png"}
               width={40}
               height={40}
@@ -243,12 +243,10 @@ export default function Home() {
             Soft Skills
           </h2>
         </div>
-        <div
-          className={`flex justify-center ${dark ? "text-white" : "text-red "}`}
-        >
+        <div className={`flex justify-center ${dark ? "text-white" : ""}`}>
           <div className="m-10 ">
             <Image
-              className="shadow-xl"
+              className="shadow-xl rounded-md"
               src={"/creatividad.jpg"}
               width={100}
               height={100}
@@ -257,7 +255,7 @@ export default function Home() {
           </div>
           <div className="m-10">
             <Image
-              className="shadow-xl"
+              className="shadow-xl rounded-md"
               src={"/problem-solution.jpg"}
               width={200}
               height={100}
@@ -266,7 +264,7 @@ export default function Home() {
           </div>
           <div className="m-10">
             <Image
-              className="shadow-xl"
+              className="shadow-xl rounded-md"
               src={"/time-care.jpg"}
               width={160}
               height={100}
@@ -275,7 +273,7 @@ export default function Home() {
           </div>
           <div className="m-10">
             <Image
-              className="shadow-xl"
+              className="shadow-xl rounded-md"
               src={"/team-work.jpg"}
               width={160}
               height={100}
@@ -316,19 +314,19 @@ export default function Home() {
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4 border-t-4">
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/next.svg"}
                   width={60}
                   height={60}
                 />
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Tailwinds.png"}
                   width={60}
                   height={60}
                 />
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Mongoose.png"}
                   width={60}
                   height={60}
@@ -340,14 +338,14 @@ export default function Home() {
                   href={"https://github.com/RodsmonsterPC/foodie-next"}
                 >
                   <Image
-                    className="hover:w-8 h-8"
+                    className="overflow-hidden hover:scale-125"
                     src={"/github.svg"}
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link
-                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 hover:bg-indigo-900 h-8 pt-1"
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1 "
                   href={"https://foodie-six-rho.vercel.app/"}
                 >
                   Watch
@@ -375,13 +373,13 @@ export default function Home() {
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4  border-t-4">
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Javacript.png"}
                   width={35}
                   height={40}
                 />
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Bootstrap.png"}
                   width={40}
                   height={40}
@@ -393,14 +391,14 @@ export default function Home() {
                   href="https://github.com/RodsmonsterPC/devto-Javascript-Challengue"
                 >
                   <Image
-                    className="hover:w-8 h-8"
+                    className="overflow-hidden hover:scale-125"
                     src={"/github.svg"}
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link
-                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 hover:bg-indigo-900 h-8 pt-1"
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
                   href={"https://devto-challenge-iota.vercel.app/"}
                 >
                   Watch
@@ -428,19 +426,19 @@ export default function Home() {
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4 border-t-4">
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Vite.svg"}
                   width={40}
                   height={40}
                 />
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Javacript.png"}
                   width={40}
                   height={40}
                 />
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Bootstrap.png"}
                   width={40}
                   height={40}
@@ -452,14 +450,14 @@ export default function Home() {
                   href="https://github.com/RodsmonsterPC/rickandmorty"
                 >
                   <Image
-                    className="hover:w-8 h-8"
+                    className="overflow-hidden hover:scale-125"
                     src={"/github.svg"}
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link
-                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 hover:bg-indigo-900 h-8 pt-1"
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
                   href={"https://rickandmorty-ashen.vercel.app/"}
                 >
                   Watch
@@ -487,13 +485,13 @@ export default function Home() {
               <p className="text-center mt-4">Languages</p>
               <div className="flex justify-center mt-4 border-b-4 border-t-4">
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Javacript.png"}
                   width={43}
                   height={40}
                 />
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/css.png"}
                   width={43}
                   height={40}
@@ -505,14 +503,14 @@ export default function Home() {
                   href="https://github.com/RodsmonsterPC/MisPelis"
                 >
                   <Image
-                    className="hover:w-8 h-8"
+                    className="overflow-hidden hover:scale-125"
                     src={"/github.svg"}
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link
-                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 hover:bg-indigo-900 h-8 pt-1"
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
                   href={"https://mis-pelis.vercel.app/"}
                 >
                   Watch
@@ -540,13 +538,13 @@ export default function Home() {
               <p className="text-center mt-3">Languages</p>
               <div className="flex justify-center mt-4 border-b-4 border-t-4 pb-1.5">
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/next.svg"}
                   width={60}
                   height={60}
                 />
                 <Image
-                  className="m-4 rounded-full"
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
                   src={"/Tailwinds.png"}
                   width={60}
                   height={60}
@@ -558,15 +556,174 @@ export default function Home() {
                   href="https://github.com/RodsmonsterPC/Blife"
                 >
                   <Image
-                    className="hover:w-8 h-8"
+                    className="overflow-hidden hover:scale-125"
                     src={"/github.svg"}
                     width={25}
                     height={25}
                   />
                 </Link>
                 <Link
-                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 hover:bg-indigo-900 h-8 pt-1"
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
                   href={"https://blife-gray.vercel.app/"}
+                >
+                  Watch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
+            <div className="h-imgPort">
+              <Link href={"https://portafolio-maquetacion.vercel.app/"}>
+                <Image
+                  className="rounded-t-lg"
+                  src={"/portafolio.png"}
+                  width={400}
+                  height={50}
+                />
+              </Link>
+            </div>
+            <p className="m-2 font-bold">Portafolio-Prueba</p>
+            <div>
+              <p className="text-center mt-3">Languages</p>
+              <div className="flex justify-center mt-4 border-b-4 border-t-4 pb-.5">
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/css.png"}
+                  width={43}
+                  height={40}
+                />
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/Javacript.png"}
+                  width={43}
+                  height={34}
+                />
+              </div>
+              <div className="flex justify-center m-3 h-10">
+                <Link
+                  className="w-7"
+                  href="https://github.com/RodsmonsterPC/cssAvanzado/tree/main/06-Maqutacion-web1"
+                >
+                  <Image
+                    className="overflow-hidden hover:scale-125"
+                    src={"/github.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
+                  href={"https://portafolio-maquetacion.vercel.app/index.html"}
+                >
+                  Watch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
+            <div className="h-imgPort">
+              <Link href={"https://developer-inky-six.vercel.app/"}>
+                <Image
+                  className="rounded-t-lg"
+                  src={"/Develop.jpg"}
+                  width={400}
+                  height={50}
+                />
+              </Link>
+            </div>
+            <p className="m-2 font-bold">Develop</p>
+            <div>
+              <p className="text-center mt-3">Languages</p>
+              <div className="flex justify-center mt-4 border-b-4 border-t-4 pb-.5">
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/css.png"}
+                  width={43}
+                  height={40}
+                />
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/Javacript.png"}
+                  width={43}
+                  height={34}
+                />
+              </div>
+              <div className="flex justify-center m-3 h-10">
+                <Link
+                  className="w-7"
+                  href="https://github.com/RodsmonsterPC/cssAvanzado/tree/main/10-Maquetacion-web2"
+                >
+                  <Image
+                    className="overflow-hidden hover:scale-125"
+                    src={"/github.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
+                  href={"https://developer-inky-six.vercel.app/"}
+                >
+                  Watch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
+            <div className="h-imgPort">
+              <Link href={"https://games-page-two.vercel.app/"}>
+                <Image
+                  className="rounded-t-lg"
+                  src={"/Games.JPG"}
+                  width={400}
+                  height={50}
+                />
+              </Link>
+            </div>
+            <p className="m-2 font-bold">Gamer</p>
+            <div>
+              <p className="text-center mt-3">Languages</p>
+              <div className="flex justify-center mt-4 border-b-4 border-t-4 pb-.5">
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/css.png"}
+                  width={43}
+                  height={40}
+                />
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/Javacript.png"}
+                  width={43}
+                  height={34}
+                />
+              </div>
+              <div className="flex justify-center m-3 h-10">
+                <Link
+                  className="w-7"
+                  href="https://github.com/RodsmonsterPC/cssAvanzado/tree/main/11-Maquetacion-3"
+                >
+                  <Image
+                    className="overflow-hidden hover:scale-125"
+                    src={"/github.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
+                  href={"https://games-page-two.vercel.app/"}
                 >
                   Watch
                 </Link>

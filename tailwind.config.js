@@ -12,6 +12,9 @@ module.exports = {
         card: "400px",
         title: "500px",
       },
+      height: {
+        imgPort: "11.6rem",
+      },
     },
   },
   plugins: [],
