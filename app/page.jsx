@@ -739,7 +739,7 @@ export default function Home() {
               <Link href={"https://rodsdevtree.netlify.app/"}>
                 <Image
                   className="rounded-t-lg"
-                  src={"/DevTree.png"}
+                  src={"/devtree.jpg"}
                   width={400}
                   height={50}
                 />
