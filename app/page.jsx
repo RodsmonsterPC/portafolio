@@ -86,7 +86,7 @@ export default function Home() {
               dark ? "text-white" : ""
             }`}
           >
-            Hello, my name is Rodolfo Pérez Cerecedo, 25 years old, from
+            Hello, my name is Rodolfo Pérez Cerecedo, 26 years old, from
             Tampico, Tamaulipas, Mex. A Junior programmer with experience on
             javascript, nodejs, git, vite.js, next.js and react. Updating to new
             technologies, management on unrelated databases, knowledge of AWS
@@ -789,6 +789,71 @@ export default function Home() {
                 <Link
                   className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
                   href={"https://rodsdevtree.netlify.app/"}
+                >
+                  Watch
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`w-card h-card  rounded-md ${
+              dark ? "bg-gradient-to-r from-zinc-300 to-zinc-400" : "bg-white"
+            }`}
+          >
+            <div className="h-imgPort">
+              <Link href={"https://deploy-fornt-nextjs.vercel.app/"}>
+                <Image
+                  className="rounded-t-lg"
+                  src={"/cashTrackr.png"}
+                  width={400}
+                  height={50}
+                />
+              </Link>
+            </div>
+            <p className="m-2 font-bold">Cash Trackr</p>
+            <div>
+              <p className="text-center mt-3">Languages</p>
+              <div className="flex justify-center mt-4 border-b-4 border-t-4 pb-.5">
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/Tailwinds.png"}
+                  width={43}
+                  height={40}
+                />
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/nextjs.png"}
+                  width={43}
+                  height={34}
+                />
+                 <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/typecript.png"}
+                  width={43}
+                  height={34}
+                />
+                <Image
+                  className="m-4 rounded-full overflow-hidden hover:scale-125"
+                  src={"/progress.png"}
+                  width={43}
+                  height={34}
+                />
+              </div>
+              <div className="flex justify-center m-2 h-10">
+                <Link
+                  className="w-7"
+                  href="https://github.com/RodsmonsterPC/cashtrackr"
+                >
+                  <Image
+                    className="overflow-hidden hover:scale-125"
+                    src={"/github.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link
+                  className="bg-cyan-400 rounded-full w-16 text-center text-white ml-6 transition ease-in-out duration-300 hover:bg-indigo-900 h-8 pt-1"
+                  href={"https://deploy-fornt-nextjs.vercel.app/"}
                 >
                   Watch
                 </Link>
